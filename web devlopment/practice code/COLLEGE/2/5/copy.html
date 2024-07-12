@@ -1,0 +1,58 @@
+<html>
+<head> <h3>Matrix additon</h3></head>
+<body>
+<script>
+var r=prompt('Enter row value..: ' );
+var c=prompt('Enter column value...: ' );
+var arr = [];
+for (var i = 0; i< r; i++) {
+
+for(var j = 0; j< c; j++) {
+arr[i] = [];
+}
+}
+for (var i = 0; i < r; i++) {
+for (var j = 0; j <c; j++) {
+arr[i][j] = prompt('Enter array Element...: ' );
+}
+}
+var arr1 = [];
+for (var i = 0; i< r; i++) {
+
+for(var j = 0; j< c; j++) {
+arr1[i] = [];
+}
+}
+for (var i = 0; i < r; i++) {
+for (var j = 0; j <c; j++) {
+arr1[i][j] = prompt('Enter array Element...: ' );
+}
+}
+var arr2 = [];
+for (var i = 0; i< r; i++) {
+
+for(var j = 0; j< c; j++) {
+arr2[i] = [];
+}
+}
+document.writeln("Matrix before additon"+"<br>");
+for (var i = 0; i< r; i++) {
+for(var j = 0; j< c; j++) {
+document.write(arr[i][j]+" ");
+}document.write("<br>");
+}
+for (var i = 0; i< r; i++) {
+for(var j = 0; j< c; j++) {
+document.write(arr1[i][j]+" ");
+}document.write("<br>");
+}
+document.writeln("Matrix After addtion"+"<br>");
+for (var i = 0; i< r; i++) {
+for(var j = 0; j< c; j++) {
+arr2[i][j]=arr[i][j]+arr1[i][j];
+document.write(arr2[i][j]);
+}document.write("<br>");
+}
+</script>
+</body>
+</html>
